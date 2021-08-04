@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ad Space</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="asset/CSS/Style.css" rel="stylesheet" type="text/css">
+<link href="asset/CSS/Bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>Test</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="TopNav" id="myTopnav">
+		<div class="logo">
+		  <img src="asset/Art/adeasy-logo.png" alt="logo" width="125px">
+		</div>
+		  <nav>
+			  <ul>
+				<li><a href="">Browse Ad Space</a></li>
+			    <li><a href="">Getting Started</a></li>
+			    <li><a href="">Login</a></li>
+				<li><button class="signup-btn">Sign Up</button> </li> 
+			  </ul>
+		  </nav>   
+	    </div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="container-fluid-1">
+			<table class="side-panel">
+				<tr><h3>Search</h3></tr>
+				<tr><p><label>Media Name</label></p></tr>
+				<tr><input id="media-name" type="text" placeholder="Search.."></tr>
+				<tr><p><label>Media Type</label></p></tr>
+				
+				<table>
+					<tr>
+					<td><button class="btn-side">All</button></td>
+				    <td><button class="btn-side">Radio</button></td>
+					<td><button class="btn-side-active">Television</button></td>
+				</tr>
+				<tr>
+					<td><button class="btn-side">Cinema</button></td>
+					<td><button class="btn-side">Magazine</button></td>
+					<td><button class="btn-side">Newspaper</button></td>
+				</tr>
+				<tr>
+					<td><button class="btn-side">Ambient</button></td>
+				    <td><button class="btn-side">Billboard</button></td>
+					<td><button class="btn-side">D Billboard</button></td>
+				</tr>
+				<tr>
+					<td><button class="btn-side">Instore</button></td>
+				    <td><button class="btn-side">Bicycle</button></td>
+					<td><button class="btn-side">Bus</button></td>
+				</tr>
+				<tr>
+					<td><button class="btn-side">Car</button></td>
+			        <td><button class="btn-side">Lorry</button></td>
+			        <td><button class="btn-side">Taxi</button></td>
+				</tr>
+				<tr>
+					<td><button class="btn-side">Train</button></td>
+				</tr>	
+				
+				</table>
+				
+				<tr><p><label>Location</label></p></tr>
+				<tr><input id="mylocation" type="text" placeholder="Search.."></tr>
+				<tr><p>Date</p></tr>
+				<tr><input id="mydate" type="date" placeholder=""></tr><br>
+				<tr class="sp">
+					<td><a id="mylink">Campaign Planner</a></td>
+					<td><button class="btn-search">Search</button></td>
+				</tr>
+			</table>	
+				
+			</div>
+		</div>
+		
+		<div class="col-sm-8">
+			<div class="row">
+				<div class="col-sm-6" style="padding-left:16px">
+					<div class="container-fluid">
+						<h2>Ad Space</h2>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 , b">
+					<div class="container-fluid">
+						<div class="increment">
+							<h2>Total Item(s) in Cart:<input type="text" name="quantity" value="" size="1" id="number"></h2>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+	      <p>120 ad spaces available</p>
+			
+			<div class="row">
+				<div class="col-sm-6 , tab">
+					<div class="container-fluid">
+						<div class="tab">
+							<button class="tablinks" onClick="openTab(event,'All')" id="defaultOpen">All (120)</button>
+							<button class="tablinks" onClick="openTab(event,'Deals')">Deals (7)</button>
+						</div>
+					</div>
+				</div>
+				
+				<!--<div class="col-sm-6 , mini">-->
+				<!--<div class="row">
+					<table>
+						<tr>
+							<td>Sort by</td>
+							<td><input id="mysort" type="search" placeholder="Popular"></td>
+							<td><div id="btnContainer">
+								  <button class="btn" ><i class="fa fa-bars"></i></button> 
+								  <button class="btn active" ><i class="fa fa-th-large"></i></button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div> -->
+			</div>
+			
+			<div id="All" class="tabcontent">
+					<div class="row">
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+						<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+							<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+			
+			</div>
+			</div>
+			
+		    <div id="Deals" class="tabcontent">
+					<div class="row">
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+				
+				<div class="column">
+					<div class="card">
+						<img src="asset/Art/television.png" alt="tv">
+						<div class="text-block">
+							<p>Deals</p>
+						</div>
+						<table>
+							<tr>
+								<th>Reach</th>
+								<th>Income</th>
+							</tr>
+							<td>1,500,000</td>
+							<td>1,500 - 2,000</td>
+							
+							<tr>
+								<th>Language</th>
+								<th>Age</th>
+							</tr>
+							<td>English, Malay, Mandarin</td>
+							<td>18 - 22</td>
+							
+							<tr>
+								<th>From</th>
+							</tr>
+							<td id="vle">RM 4,500</td>
+							<td><button class="book-btn" onClick="incrementValue()">Book Now</button></td>
+						</table>
+					</div>
+				</div>
+			
+			</div>
+			</div>
+			
+			
+			
+            <div class="page-index">
+				<a class="active" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">&raquo;</a>
+			</div>
+		
+		</div>
+	</div>
+
+<script>
+	// tab //
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();			
+	
+// Book Now //
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value<10){
+        value++;
+            document.getElementById('number').value = value;
+    }	
+}
+
+/* Responsive */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "TopNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "TopNav";
+  }
+}	
+	
+</script>
+
+	
+</body>
+</html>
